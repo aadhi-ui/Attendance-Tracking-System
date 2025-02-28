@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        nav {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: 0.3s;
+            width: 250px;
+        }
+
+        .card:hover {
+            background: #007bff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Attendance System</div>
+        <ul>
+            <li><a href="athome.html">Home</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+
+    <section class="container">
+        <h1>Welcome, Faculty Member!</h1>
+        <p>Easily track and manage student attendance.</p>
+
+        <div class="cards">
+            <div class="card" onclick="markAttendance()">
+                <h2>📌 Mark Attendance</h2>
+                <p>Click to log student attendance.</p>
+            </div>
+            <div class="card" onclick="viewRecords()">
+                <h2>📊 View Records</h2>
+                <p>Check past attendance details.</p>
+            </div>
+            <div class="card" onclick="generateReport()">
+                <h2>📈 Generate Reports</h2>
+                <p>Download attendance reports.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function markAttendance() {
+            alert("Redirecting to Mark Attendance Page...");
+        }
+
+        function viewRecords() {
+            alert("Redirecting to View Attendance Records...");
+        }
+
+        function generateReport() {
+            alert("Redirecting to Generate Reports Page...");
+        }
+    </script>
+
+</body>
+</html>
